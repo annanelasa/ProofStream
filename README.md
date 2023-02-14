@@ -2,14 +2,8 @@
 
 Article
 MODELS FOR GENERATION OF PROOF FOREST IN ZK-SNARK BASED SIDECHAINS
-Yuri Bespalov 1 , Lyudmila Kovalchuk2 , Hanna Nelasa3 , Roman Oliynykov4 , Rob Viglione 5
-1 Bogolyubov Institute for Theoretical Physics, Kiev, Ukraine; yu.n.bespalov@gmail.com
-2 Input Output, Singapore; G.E. Pukhov Institute for Modelling in Energy Engineering, Kyiv, Ukraine;
-lyudmila.kovalchuk@iohk.io
-3 Zaporizhzhia Polytechnic National University, Zaporizhzhia, Ukraine; annanelasa@gmail.com
-4 Input Output, Singapore; V. N. Karazin Kharkiv National University, Kharkiv, Ukraine;
-roman.oliynykov@iohk.io
-5 Horizen, Milan, Italy; rob@horizenlabs.io
+Yuri Bespalov, Lyudmila Kovalchuk , Hanna Nelasa, Roman Oliynykov, Rob Viglione
+
 
 Abstract:
 Sidechains are among the most promising scalability and extended functionality solutions for blockchains. Application of zero knowledge techniques (Latus, Mina) allows to reach high level security and general throughput, though it brings new challenges on keeping decentralization where significant effort is required for robust computation of zk-proofs. We consider a simultaneous decentralized creation of various zk-proof trees that form proof-trees sequences in sidechains in the model that combines behavior of provers, both deterministic (mutually consistent) or stochastic (independent) and types of proof trees. We define the concept of efficiency of such process, introduce its quantity measure and recommend parameters for tree creation. In deterministic cases, the sequences of published trees are ultimately periodic and ensure the highest possible efficiency (no collisions in proof creation). In stochastic cases, we get a universal measure of prover efficiencies given by the explicit formula in one case or calculated by a simulation model in another case. The optimal number of allowed provers’ positions for a step can be set for various sidechain parameters, such as number of provers, number of time steps within one block, etc. Benefits and restrictions for utilization of non-perfect binary proof trees are also explicitly presented. 
