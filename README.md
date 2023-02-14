@@ -4,14 +4,22 @@ Article
 MODELS FOR GENERATION OF PROOF FOREST IN ZK-SNARK BASED SIDECHAINS
 Yuri Bespalov, Lyudmila Kovalchuk , Hanna Nelasa, Roman Oliynykov, Rob Viglione
 
-
 Abstract:
 Sidechains are among the most promising scalability and extended functionality solutions for blockchains. Application of zero knowledge techniques (Latus, Mina) allows to reach high level security and general throughput, though it brings new challenges on keeping decentralization where significant effort is required for robust computation of zk-proofs. We consider a simultaneous decentralized creation of various zk-proof trees that form proof-trees sequences in sidechains in the model that combines behavior of provers, both deterministic (mutually consistent) or stochastic (independent) and types of proof trees. We define the concept of efficiency of such process, introduce its quantity measure and recommend parameters for tree creation. In deterministic cases, the sequences of published trees are ultimately periodic and ensure the highest possible efficiency (no collisions in proof creation). In stochastic cases, we get a universal measure of prover efficiencies given by the explicit formula in one case or calculated by a simulation model in another case. The optimal number of allowed provers’ positions for a step can be set for various sidechain parameters, such as number of provers, number of time steps within one block, etc. Benefits and restrictions for utilization of non-perfect binary proof trees are also explicitly presented. 
 
 Keywords:
-Binary tree; Perfect tree; Magma; Operad; PRO; Occupancy distribution; blockchain; 15
-sidechain; zk-SNARK; succint blockchain 16
+Binary tree; Perfect tree; Magma; Operad; PRO; Occupancy distribution; blockchain; sidechain; zk-SNARK; succint blockchain
 
+The general scheme of simulation model.
+A special feature our algorithm is a simultaneous construction of several trees forming a linear ordered forest, rather than a single tree. Periodically the most left tree is included in the published block and the rest are considered as a buffer for further block generation.
+
+Input parameters are: 
+• dichotomous bbehavior regulates behavior of provers, deterministic (mutually consistent) or stochastic (independent);
+• dichotomous bshape describes the shape of generated trees, only perfect binary trees or arbitrary strict binary trees;
+• number of blocks published during the epoch;
+• number of steps for one block generation;
+• number of provers;
+• number of positions allocated for proof.
 
 
 Launch:
