@@ -11,11 +11,17 @@ Keywords: Binary tree; Perfect tree; Magma; Operad; PRO; Occupancy distribution;
 A special feature our algorithm for the of simulation model is a simultaneous construction of several trees forming a linear ordered forest, rather than a single tree. Periodically the most left tree is included in the published block and the rest are considered as a buffer for further block generation.
 
 Input parameters are: 
+
 • dichotomous bbehavior regulates behavior of provers, deterministic (mutually consistent) or stochastic (independent);
+
 • dichotomous bshape describes the shape of generated trees, only perfect binary trees or arbitrary strict binary trees;
+
 • number of blocks published during the epoch;
+
 • number of steps for one block generation;
+
 • number of provers;
+
 • number of positions allocated for proof.
 
 
